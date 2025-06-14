@@ -1,0 +1,8 @@
+@mixin grid($distintas, $columnas, $gap, $alineacion: auto)
+  display: grid
+  @if $distintas == true
+    grid-template-columns: $columnas
+  @else
+    grid-template-columns: repeat($columnas, 1fr)
+  gap: $gap
+  align-items: $alineacion

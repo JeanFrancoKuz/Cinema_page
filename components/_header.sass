@@ -1,2 +1,17 @@
-header
-  background-image: url('')
+.header
+  background-image: url("./img/general/background4.jpg")
+  background-size: cover
+  @include grid(false, 1, 10, center)
+  background-position: center
+  min-height: 80vh
+  position: relative
+  z-index: 1
+&::before
+  content: ""
+  position: absolute
+  background: rgba(0, 0, 0, 0.4) // oscurece un poco la imagen
+  z-index: 0
+  h1
+    position: relative
+    z-index: 2
+    color: white
