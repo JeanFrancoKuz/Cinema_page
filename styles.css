@@ -1,1 +1,9 @@
-/*# sourceMappingURL=styles.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  background-color: #031f3e;
+}
+
+header {
+  background-image: url("");
+}/*# sourceMappingURL=styles.css.map */
