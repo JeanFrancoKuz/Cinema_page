@@ -39,10 +39,15 @@ body {
   justify-content: center;
   text-align: center;
 }
+.header-content h1 {
+  font-size: 40px;
+}
+.header-content h1 p {
+  font-size: 200px;
+}
 
 .botonsdelheader {
   position: relative;
-  justify-content: center;
 }
 .botonsdelheader button {
   margin-top: 20px;
@@ -51,17 +56,11 @@ body {
   padding: 10px 20px;
   border-radius: 8px;
   border: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   gap: 10px;
   cursor: pointer;
 }
 .botonsdelheaderbutton:hover {
   background-color: #c62828;
-}
-.botonsdelheaderimg {
-  height: 20px;
 }
 
 * {
