@@ -1,8 +1,8 @@
-@mixin grid($distintas, $columnas, $gap, $alineacion: auto)
-  display: grid
-  @if $distintas == true
-    grid-template-columns: $columnas
-  @else
-    grid-template-columns: repeat($columnas, 1fr)
-  gap: $gap
+@mixin flex($direccion, $justificacion, $alineacion, $gap: 0)
+  display: flex
+  flex-direction: $direccion
+  justify-content: $justificacion
   align-items: $alineacion
+  gap: $gap
+
+  
