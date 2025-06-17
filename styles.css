@@ -101,7 +101,7 @@ body {
   background-size: cover;
   background-position: center;
   position: relative;
-  min-height: 70vh;
+  min-height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -163,9 +163,19 @@ main {
 }
 
 #Movies {
-  padding: 20px;
+  padding: 25px;
 }
 #Movies h2 {
+  font-size: 34px;
+  color: white;
+  text-align: start;
+  margin-bottom: 20px;
+}
+
+#Coming-soon {
+  padding: 25px;
+}
+#Coming-soon h2 {
   font-size: 34px;
   color: white;
   text-align: start;
@@ -188,6 +198,7 @@ main {
   overflow: hidden;
   width: 250px;
   transition: all 0.3s ease;
+  margin: 8px;
 }
 .movie-card:hover {
   transform: scale(1.05);
