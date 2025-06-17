@@ -163,7 +163,7 @@ main {
 }
 
 #Movies {
-  padding: 25px;
+  padding: 20px 3px;
 }
 #Movies h2 {
   font-size: 34px;
@@ -173,7 +173,7 @@ main {
 }
 
 #Coming-soon {
-  padding: 25px;
+  padding: 20px 3px;
 }
 #Coming-soon h2 {
   font-size: 34px;
