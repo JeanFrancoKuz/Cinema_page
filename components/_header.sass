@@ -1,3 +1,4 @@
+
 .main-header 
   background-image: url("./img/general/background4.jpg")
   background-size: cover
@@ -28,19 +29,29 @@
     font-size: 40px
     p
       font-size: 200px
+    &:hover
+      transform: scale(1.05)
+      
 
 .botonsdelheader 
   position: relative
   button 
+    font-size: 16px
     margin-top: 20px
-    background-color: #e53935
-    color: white
+    background-color: $color-boton
+    color: $color-texto
     padding: 10px 20px
     border-radius: 8px
     border: none
+    display: flex
+    align-items: center
+    justify-content: center
     cursor: pointer
-  &button:hover 
-    background-color: #c62828
+    gap: 10px
+    &:hover 
+      background-color: $color-boton-hover
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3)
+      transform: scale(1.05)
     
 
 
