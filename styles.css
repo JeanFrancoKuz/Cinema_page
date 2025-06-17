@@ -18,7 +18,6 @@ body {
   flex-wrap: wrap;
   background-color: #e5c01a;
   padding: 20px 15px;
-  position: sticky;
 }
 .navbar a {
   cursor: pointer;
@@ -160,6 +159,11 @@ body {
 
 main {
   padding: 40px;
+}
+@media screen and (max-width: 600px) {
+  main {
+    padding: auto;
+  }
 }
 
 #Movies {
