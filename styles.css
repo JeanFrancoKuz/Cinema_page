@@ -245,6 +245,10 @@ main {
   justify-content: center;
   text-align: start;
 }
+.movie-summary p {
+  font-size: 16px;
+  max-width: 350px;
+}
 
 .movie-card:hover .movie-summary {
   opacity: 1;
@@ -262,7 +266,6 @@ main {
 }
 .movie-info h3 p {
   color: #666;
-  font-size: 14px;
 }
 
 .movie-meta {
