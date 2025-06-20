@@ -125,6 +125,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 .header-content h1 {
   font-size: 40px;
@@ -161,6 +162,10 @@ body {
   background-color: #a01a1a;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   transform: scale(1.05);
+}
+
+main {
+  padding: 40px;
 }
 
 #Movies {
