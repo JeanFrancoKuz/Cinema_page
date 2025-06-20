@@ -2,8 +2,11 @@
 
 .navbar
   @include flex(row, space-between, center, 5px)
+  position: sticky
+  top: 0
+  z-index: 1000
+  background-color: #fbdf2de9
   flex-wrap: wrap
-  background-color: $color-navbar
   padding: 10px
   a
     cursor: pointer
@@ -12,9 +15,6 @@
   img
     width: 200px
     height: auto
-    @media screen and (max-width:600px)
-      width: 200px
-      height: auto
 
 .links
   display: flex
@@ -22,14 +22,6 @@
   cursor: pointer
   gap: 5px
   display: none
-  @media screen and (min-width:600px)
-    display: none
-  @media screen and (min-width:768px)
-    display: none
-  @media screen and (min-width:992px)
-    display: none
-  @media screen and (min-width:1200px)
-    display: none
   @media screen and (min-width:1201px)
     display: block
   a
@@ -64,7 +56,8 @@
     option 
       background-color: white
       color: black
-  button
+
+.navbar-button
     cursor: pointer
     font-size: 14px
     background-color: rgb(194, 43, 40)
@@ -73,5 +66,7 @@
     border: none
     border-radius: 10px
     outline: none
-
+    display: none
+    @media screen and (min-width: 1201px) 
+      display: block
 

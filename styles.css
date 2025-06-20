@@ -16,8 +16,11 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: rgba(251, 223, 45, 0.9137254902);
   flex-wrap: wrap;
-  background-color: #e5c01a;
   padding: 10px;
 }
 .navbar a {
@@ -28,12 +31,6 @@ body {
   width: 200px;
   height: auto;
 }
-@media screen and (max-width: 600px) {
-  .logo img {
-    width: 200px;
-    height: auto;
-  }
-}
 
 .links {
   display: flex;
@@ -41,26 +38,6 @@ body {
   cursor: pointer;
   gap: 5px;
   display: none;
-}
-@media screen and (min-width: 600px) {
-  .links {
-    display: none;
-  }
-}
-@media screen and (min-width: 768px) {
-  .links {
-    display: none;
-  }
-}
-@media screen and (min-width: 992px) {
-  .links {
-    display: none;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .links {
-    display: none;
-  }
 }
 @media screen and (min-width: 1201px) {
   .links {
@@ -106,7 +83,8 @@ body {
   background-color: white;
   color: black;
 }
-.buttoms-specials button {
+
+.navbar-button {
   cursor: pointer;
   font-size: 14px;
   background-color: rgb(194, 43, 40);
@@ -115,6 +93,12 @@ body {
   border: none;
   border-radius: 10px;
   outline: none;
+  display: none;
+}
+@media screen and (min-width: 1201px) {
+  .navbar-button {
+    display: block;
+  }
 }
 
 .main-header {
