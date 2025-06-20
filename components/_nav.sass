@@ -1,20 +1,20 @@
 @import ./_mixins
 
 .navbar
-  @include flex(row,space-between,center,5px)
+  @include flex(row, space-between, center, 5px)
   flex-wrap: wrap
   background-color: $color-navbar
-  padding: 20px 15px
+  padding: 10px
   a
     cursor: pointer
 
 .logo
   img
-    width: 300px
-    height: auto
-    @media screen and (min-width:768px)
     width: 200px
     height: auto
+    @media screen and (min-width:768px)
+      width: 100px
+      height: auto
 
 .links
   display: flex
