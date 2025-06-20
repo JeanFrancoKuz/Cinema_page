@@ -12,8 +12,8 @@
   img
     width: 200px
     height: auto
-    @media screen and (min-width:768px)
-      width: 100px
+    @media screen and (max-width:600px)
+      width: 200px
       height: auto
 
 .links
@@ -21,6 +21,17 @@
   flex-wrap: wrap
   cursor: pointer
   gap: 5px
+  display: none
+  @media screen and (min-width:600px)
+    display: none
+  @media screen and (min-width:768px)
+    display: none
+  @media screen and (min-width:992px)
+    display: none
+  @media screen and (min-width:1200px)
+    display: none
+  @media screen and (min-width:1201px)
+    display: block
   a
     text-decoration: none
     font-size: 14px
@@ -30,8 +41,6 @@
     border-radius: 8px
     cursor: pointer
     transition: background-color 0.8s ease
-    @media screen and (max-width:768px)
-      display: none
     &:hover
       color: white
       background-color: $color-azul-detalle
@@ -40,7 +49,9 @@
 
 .buttoms-specials
   @include flex(row,flex-star,center,5px)
+  gap: 10px
   flex-wrap: wrap
+
   select
     font-size: 14px
     background-color: rgb(194, 43, 40)
@@ -62,6 +73,5 @@
     border: none
     border-radius: 10px
     outline: none
-    @media screen and (max-width:768px)
-      display: none
+
 

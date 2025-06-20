@@ -7,6 +7,8 @@
 
 body {
   background-color: #121212;
+  height: 100%;
+  box-sizing: border-box;
 }
 
 .navbar {
@@ -26,9 +28,9 @@ body {
   width: 200px;
   height: auto;
 }
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 600px) {
   .logo img {
-    width: 100px;
+    width: 200px;
     height: auto;
   }
 }
@@ -38,6 +40,32 @@ body {
   flex-wrap: wrap;
   cursor: pointer;
   gap: 5px;
+  display: none;
+}
+@media screen and (min-width: 600px) {
+  .links {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .links {
+    display: none;
+  }
+}
+@media screen and (min-width: 992px) {
+  .links {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .links {
+    display: none;
+  }
+}
+@media screen and (min-width: 1201px) {
+  .links {
+    display: block;
+  }
 }
 .links a {
   text-decoration: none;
@@ -48,11 +76,6 @@ body {
   border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.8s ease;
-}
-@media screen and (max-width: 768px) {
-  .links a {
-    display: none;
-  }
 }
 .links a:hover {
   color: white;
@@ -66,6 +89,7 @@ body {
   flex-direction: row;
   justify-content: flex-star;
   align-items: center;
+  gap: 10px;
   flex-wrap: wrap;
 }
 .buttoms-specials select {
@@ -91,11 +115,6 @@ body {
   border: none;
   border-radius: 10px;
   outline: none;
-}
-@media screen and (max-width: 768px) {
-  .buttoms-specials button {
-    display: none;
-  }
 }
 
 .main-header {
@@ -128,13 +147,13 @@ body {
   text-align: center;
 }
 .header-content h1 {
-  font-size: 40px;
+  font-size: 30px;
 }
 .header-content h1:hover {
   transform: scale(1.05);
 }
 .header-content p {
-  font-size: 17px;
+  font-size: 15px;
 }
 .header-content p:hover {
   transform: scale(1.03);
@@ -152,7 +171,7 @@ body {
   border-radius: 8px;
   border: none;
   display: flex;
-  flex-direction: flex-star;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 5px;
@@ -164,76 +183,69 @@ body {
   transform: scale(1.05);
 }
 
-main {
-  padding: 40px;
+.container-pelis {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
-#Movies {
-  padding: 20px 3px;
-}
 #Movies h2 {
   font-size: 34px;
   color: white;
   text-align: start;
-  margin-bottom: 20px;
+  margin: 20px;
 }
 
-#Coming-soon {
-  padding: 20px 3px;
-}
 #Coming-soon h2 {
   font-size: 34px;
   color: white;
   text-align: start;
-  margin-bottom: 20px;
+  margin: 20px;
 }
 
 .grid {
   display: grid;
-  padding: 20px;
-  gap: 10px;
-  grid-template-columns: repeat(5, 1fr);
+  width: 100%;
+  gap: 30px;
+  place-items: center;
+  padding: 30px 10px;
+  grid-template-columns: repeat(1, 1fr);
 }
-@media screen and (max-width: 1200px) {
-  .grid {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-@media screen and (max-width: 992px) {
-  .grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 600px) {
   .grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 768px) {
   .grid {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (min-width: 992px) {
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .grid {
+    grid-template-columns: repeat(5, 1fr);
   }
 }
 
 .movie-card {
+  padding: auto;
   background: white;
   border-radius: 10px;
   border: solid 3px #fbc02d;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  width: 250px;
+  width: 100%;
+  max-width: 350px;
   transition: all 0.3s ease;
-  margin: 8px;
 }
 .movie-card:hover {
   transform: scale(1.05);
   box-shadow: 0 4px 8px rgb(247, 223, 45);
-}
-@media screen and (max-width: 600px) {
-  .movie-card {
-    width: 340px;
-    margin-bottom: 20px;
-  }
 }
 
 .movie-poster {
@@ -262,7 +274,7 @@ main {
   opacity: 0;
   transition: opacity 0.3s ease;
   display: flex;
-  flex-direction: flex-star;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: start;
