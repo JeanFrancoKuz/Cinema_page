@@ -254,7 +254,7 @@ body {
 
 .movie-poster {
   position: relative;
-  height: 320px;
+  height: 300px;
   overflow: hidden;
 }
 .movie-poster img {
